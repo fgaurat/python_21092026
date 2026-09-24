@@ -45,6 +45,8 @@ class Rectangle(CalcGeo):
 
 class Rectangle2(CalcGeo):
 
+    cpt = 0
+
     # Constructeur
     def __init__(self, longueur, largeur):
         if longueur > 0 and largeur > 0:

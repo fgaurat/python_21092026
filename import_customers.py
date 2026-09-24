@@ -2,8 +2,9 @@ import sqlite3
 import csv
 from pprint import pprint
 
-
+# DAO: Data Access Object
 def main():
+
 
     with open('MOCK_DATA.csv', newline='') as f:
         with sqlite3.connect("customers_db.db") as c:
@@ -20,7 +21,7 @@ def main():
                 cur = c.cursor()
 
                 print(data.values())
-                cur.execute(sql,list(data.values()))
+                cur.execute(sql, list(data.values()))
                 # cur.execute(sql,
                 #             (data['first_name'],
                 #              data['last_name'],
