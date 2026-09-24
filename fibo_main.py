@@ -10,15 +10,17 @@ def fib(n):
 
     print("fib", n)
 
-
 print("l'autre fichier")
 print(__name__)  # __main__
 
 fibo.fib(1000)
 the_other_fib(1000)
 
+
 def main():
     pass
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     main()
+
